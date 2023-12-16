@@ -1,0 +1,68 @@
+nav {
+    background-color: #21222b;
+}
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo img {
+    width: 70px;
+}
+
+nav h1 {
+    color: #86d4ea;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+
+nav .details h1 {
+    color: #86d4ea;
+}
+
+nav .right h4 {
+    color: white;
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+
+section {
+    background-color: #282e37;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+section h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section ul li {
+    color: white;
+    font-size: 23px;
+    list-style: none;
+}
+
+section ul li::before {
+    content: "\2022";
+    color: #86d4ea;
+    font-weight: bolder;
+    font-size: 30px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Media */
+
+@media only screen and (max-width: 769px) {
+    nav .right h4 {
+        text-align: center;
+    }
+  }

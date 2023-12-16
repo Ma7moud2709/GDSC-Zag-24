@@ -1,0 +1,86 @@
+:root {
+
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.field input {
+    width: 125px;
+    font-size: 32px;
+    padding: 0px 10px;
+    border: 2px solid var(--Light-grey);
+}
+
+label {
+    text-transform: uppercase;
+    font-family: 'Jomhuria', serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--Light-red);
+}
+
+form .calc div {
+    border: 1px solid var(--Smokey-grey);
+}
+
+form .calc input {
+    background-image: url(../img/icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    border: none;
+    width: 80px;
+    height: 80px;
+}
+
+form .field input:focus {
+    border-color: var(--Purple);
+    outline: none;
+}
+
+.results h1 span {
+    color: var(--Purple);
+    font-weight: bolder;
+    font-size: 55px;
+    font-style: italic;
+}
+
+.results h1 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: black;
+}
+
+.valid{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+
+@media only screen and (max-width: 500px) {
+    form .calc input{
+        position: absolute;
+        right: 180px;
+        bottom: -30px;
+    }   
+}
