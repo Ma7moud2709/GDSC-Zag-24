@@ -1,0 +1,63 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(219, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Dark-Blue);
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Dark-Grayish-Blue);
+  color: var(--Light-Cyan);
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.content h3 {
+  color: var(--Neon-Green);
+}
+
+.content .controler {
+  position: absolute;
+  bottom: -1.2rem;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.line{
+  content: url(../public/img/pattern-divider-desktop.svg);
+}
+
+.content .advice {
+  font-size: 28px;
+}
+
+.content .controler:hover {
+  box-shadow: 0 0 10px 3px hsl(150, 100%, 66%);
+}
+
+/* Media */
+
+@media only screen and (max-width: 480px) {
+  .line{
+    content: url(../public/img/pattern-divider-mobile.svg);
+  }
+}
