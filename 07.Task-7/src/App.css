@@ -1,0 +1,43 @@
+
+body{
+  background-color: #374151;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+nav{
+  color: white;
+  box-shadow: none;
+}
+
+.sidebar{
+  height: 100vh;
+}
+
+.sidebar li{
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.view-item{
+  display: flex;
+  justify-content: space-around;
+  gap:100px;
+  align-items: center;
+
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+
+.delete-message{
+  color: red;
+}
